@@ -14,6 +14,40 @@
                 <td><input type="text" name="nome" id="nome"></td>
             </tr>
             <tr>
+                <th><label for="sexo">Sexo: </label></th>
+                <td>
+                    <input type="radio" id="masc" name="sexo" value="masculino">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" id="fem" name="sexo" value="feminino">
+                    <label for="fem">Feminino</label>
+            <tr>
+                <th>Escolaridade</th>
+                <td>
+                    <select name="escolaridade" id="">
+                        <option value="ensinomedio">Ensino Médio</option>
+                        <option value="ensinosuperior">Ensino Superior</option>
+                    </select>
+                </td>
+            </tr>
+                <th>Tecnologias que domina:</th>
+                <td>
+                    <input type="checkbox" name="Tecnologias" id="java" value="java">
+                    <label for="java">Java</label>
+
+                    <input type="checkbox" name="Tecnologias" id="php" value="php">
+                    <label for="php">PHP</label>
+
+                    <input type="checkbox" name="Tecnologias" id="flutter" value="flutter">
+                    <label for="flutter">Flutter</label><br>
+
+                    <input type="checkbox" name="Tecnologias" id="mysql" value="mysql">
+                    <label for="mysql">MySQL</label>
+                    
+                    <input type="checkbox" name="Tecnologias" id="python" value="python">
+                    <label for="python">Python</label>
+                </td>
+            </tr>
+            <tr>
                 <th><label for="email">E-mail: </label></th>
                 <td><input type="email" name="email" id="email"></td>
             </tr>
@@ -26,6 +60,18 @@
                 <td><button>Enviar</button></td>
             </tr>
         </table>
+        <p>Escolha sua cor favorita:</p>
+        <input type="radio" id="cor1" name="cor" value="vermelho">
+        <label for="cor1">Vermelho</label><br>
+        
+        <input type="radio" id="cor2" name="cor" value="azul">
+        <label for="cor2">Azul</label><br>
+        
+        <input type="radio" id="cor3" name="cor" value="verde">
+        <label for="cor3">Verde</label><br>
+        
+        <input type="radio" id="cor4" name="cor" value="amarelo">
+        <label for="cor4">Amarelo</label><br>
     </form>
 </body>
 </html>
