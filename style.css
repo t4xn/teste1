@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: #D9D6D2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container {
+    display: grid;
+}
+header {
+    grid-column-start: 1;
+    grid-column-end: 12;
+    background-color: #D9D6D2;
+}
+nav {
+    background-color: #BFBAB0;
+}
+.menu {
+    display: flex;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+a, a:link {
+    text-decoration: none;
+    padding: 8px 16px;         
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+nav li {
+    float: left;
+}
+nav li a:hover {
+    background-color: #736B65;
+    color: whitesmoke;
+    transition-duration: .4s;
+}
+.items li a:hover {
+    color: whitesmoke;
+    transition-duration: .4s;
+    cursor: default;
+}
+
+.sobre, .formacao, .portifolio, .contato, .items, .form {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+}
+section h3 {
+    color: black;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: auto;
+    padding: 20px;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(60, end) forwards;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 70%; }
+}
+
+div, conteudo {    
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+}
+p, .items {
+    margin: 40px;
+}
+footer {
+    text-align: center;
+    background-color: #BFBAB0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.img {
+
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+.img img {
+    padding: 10px;
+    border-radius: 5px;
+    /* margin-bottom: 0.8rem; */
+    background-color: #BFBAB0;
+    /* border: 1px solid #736B65; */
+    width: 240px;
+    height: 160px;
+}
+
+img:hover {
+    width: 250px;
+    height: 165px;
+}
